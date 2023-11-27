@@ -13,7 +13,7 @@ club = st.sidebar.selectbox("Club", clubes)
 
 df_filtered = df_data[df_data["Club"] == club].set_index("Name")
 
-st.image(df_filtered.iloc[0]["Club logo"])
+st.image(df_filtered.iloc[0]["Club Logo"])
 st.markdown(f"## {club}")
 
 columns = ["Age", "Photo", "Flag", "Overall", "Value(£)", "Wage (£)", "Joined",
