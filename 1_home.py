@@ -18,7 +18,7 @@ st.sidebar.markdown("Desarrollado por [Novus Mando] (www.novussolutions.io)")
 
 btn = st.button("Accede a los datos originales desde Kaggle")
 if btn:
-  webbrowser.open_new_tab("https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data/")
+    webbrowser.open_new_tab("https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data/")
 
 st.markdown(
   """
