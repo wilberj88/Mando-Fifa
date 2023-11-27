@@ -18,7 +18,7 @@ player = st.sidebar.selectbox("Jugador", players)
 player_stats = df_data[df_data["Name"] == player].iloc[0]
 
 st.image(player_stats["Photo"])
-st.title(f"{player_stats["Name"]}")
+st.title(f"{player_stats['Name']}")
 
 st.markdown(f"**Club:** {player_stats['Club']}")
 st.markdown(f"**Posición:** {player_stats['Position']}")
