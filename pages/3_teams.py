@@ -27,5 +27,5 @@ st.dataframe(df_filtered[columns],
                                                           min_value=0, max_value=df_filtered["Wage(£)"].max()),
                "Photo": st.column_config.ImageColumn(),
                "Flag": st.column_config.ImageColumn("Country"),                 
-             }, height=100)
+             }, height=1000)
             
