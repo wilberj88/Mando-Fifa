@@ -29,7 +29,7 @@ col2.markdown(f"**Altura:** {player_stats['Height(cm.)']/100}")
 col3.markdown(f"**Peso:** {player_stats['Weight(lbs.)']*0.453:.2f}")
 
 st.divider()
-st.subheader(f"Overal {player_stast['Overall']}")
+st.subheader(f"Overal {player_stats['Overall']}")
 st.progress(int(player_stats['Overall']))
 
 col1, col2, col3 = st.columns(3)
