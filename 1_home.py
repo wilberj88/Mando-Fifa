@@ -17,7 +17,7 @@ if "data" not in st.session_state:
   st.session_state["data"] = df_data
 
 st.write("""
-# FIFA23 OFFICIAL DATASET! ⚽
+# Novus Mando 🎮 FIFA23 OFFICIAL DATASET! ⚽
 """)
 
 st.sidebar.markdown("Desarrollado por [Novus Mando] (www.novussolutions.io)")
