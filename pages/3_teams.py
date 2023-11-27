@@ -17,7 +17,7 @@ st.image(df_filtered.iloc[0]["Club Logo"])
 st.markdown(f"## {club}")
 
 columns = ["Age", "Photo", "Flag", "Overall", "Value(£)", "Wage(£)", "Joined",
-           "Height(cm.)", "Weight(lbs.)", "Contact Valid Until", "Release Clause(£)"]
+           "Height(cm.)", "Weight(lbs.)", "Contract Valid Until", "Release Clause(£)"]
 
 st.dataframe(df_filtered[columns],
              column_config={
