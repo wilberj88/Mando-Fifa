@@ -63,7 +63,7 @@ if player1 and player2:
   col3.markdown(f"**Peso:** {player2_stats['Weight(lbs.)']*0.453:.2f}")
   
   st.divider()
-  st.subheader(f"Overal {player_stats['Overall']}")
+  st.subheader(f"Overal {player2_stats['Overall']}")
   st.progress(int(player_stats['Overall']))
   
   col1, col2, col3 = st.columns(3)
