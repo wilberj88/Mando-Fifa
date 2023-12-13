@@ -36,7 +36,7 @@ if player1 and player2:
   st.markdown(f"**Posición:** {player1_stats['Position']}")
   
   col1, col2, col3, col4 = st.columns(4)
-  col1.markdown(f"**Edad:** {player_stats1['Age']}")
+  col1.markdown(f"**Edad:** {player1_stats['Age']}")
   col2.markdown(f"**Altura:** {player1_stats['Height(cm.)']/100}")
   col3.markdown(f"**Peso:** {player1_stats['Weight(lbs.)']*0.453:.2f}")
   
