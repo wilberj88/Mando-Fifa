@@ -64,9 +64,9 @@ if player1 and player2:
   
   st.divider()
   st.subheader(f"Overal {player2_stats['Overall']}")
-  st.progress(int(player_stats['Overall']))
+  st.progress(int(player2_stats['Overall']))
   
   col1, col2, col3 = st.columns(3)
-  col1.metric(label="Valor de mercado", value=f"£ {player_stats['Value(£)']:,}")
-  col2.metric(label="Salario mensual", value=f"£ {player_stats['Wage(£)']:,}")
-  col3.metric(label="Cláusula de recisión", value=f"£ {player_stats['Release Clause(£)']:,}")
+  col1.metric(label="Valor de mercado", value=f"£ {player2_stats['Value(£)']:,}")
+  col2.metric(label="Salario mensual", value=f"£ {player2_stats['Wage(£)']:,}")
+  col3.metric(label="Cláusula de recisión", value=f"£ {player2_stats['Release Clause(£)']:,}")
