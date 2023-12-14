@@ -70,3 +70,38 @@ if player1 and player2:
   col1.metric(label="Valor de mercado", value=f"£ {player2_stats['Value(£)']:,}")
   col2.metric(label="Salario mensual", value=f"£ {player2_stats['Wage(£)']:,}")
   col3.metric(label="Cláusula de recisión", value=f"£ {player2_stats['Release Clause(£)']:,}")
+
+
+  def render_basic_radar():
+      option = {
+              "title": {"text": "Comparativa"},
+              "legend": {"data": player1_stats['Name'], player2_stats['Name']]},
+              "radar": {
+                  "indicator": [
+                      {"name": "Carbón", "max": 6500},
+                      {"name": "Agua", "max": 16000},
+                      {"name": "Viento", "max": 30000},
+                      {"name": "Sol", "max": 38000},
+                      {"name": "Petróleo", "max": 52000},
+                      {"name": "Gas", "max": 25000},
+                  ]
+              },
+              "series": [
+                  {
+                      "name": "Versus",
+                      "type": "radar",
+                      "data": [
+                          {
+                              "value": [6000, 10000, 20000, 3500, 15000, 11800],
+                              "name": player1_stats['Name'],
+                          },
+                          {
+                              "value": [3500, 15000, 25000, 10800, 22000, 20000],
+                              "name": player2_stats['Name'],
+                          },
+                      ],
+                  }
+              ],
+          }
+      st_echarts(option, height="500px")
+  render_basic_radar()
