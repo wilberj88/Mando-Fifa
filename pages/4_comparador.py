@@ -75,7 +75,7 @@ if player1 and player2:
   def render_basic_radar():
       option = {
               "title": {"text": "Comparativa"},
-              "legend": {"data": player1_stats['Name'], player2_stats['Name']},
+              "legend": {"data": player1_stats['Name'], player2_stats['Name'],
               "radar": {
                   "indicator": [
                       {"name": "Carbón", "max": 6500},
